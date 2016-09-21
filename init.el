@@ -51,7 +51,7 @@
 
 (require 'init-frame-hooks)
 (require 'init-xterm)
-(require 'init-themes)
+(load-theme 'atom-one-dark t)  ;(require 'init-themes)
 (require 'init-osx-keys)
 (require 'init-gui-frames)
 (require 'init-dired)
@@ -60,12 +60,17 @@
 (require 'init-uniquify)
 (require 'init-ibuffer)
 (require 'init-flycheck)
+(require 'init-sml)
 
 (require 'init-recentf)
 (require 'init-smex)
 ;; If you really prefer ido to ivy, change the comments below. I will
 ;; likely remove the ido config in due course, though.
 ;; (require 'init-ido)
+(require 'init-yasnips)
+(require 'init-scheme)
+(require 'init-ts)
+(require 'init-helm)
 (require 'init-ivy)
 (require 'init-hippie-expand)
 (require 'init-company)
@@ -113,7 +118,7 @@
   (require 'init-clojure)
   (require 'init-clojure-cider))
 (require 'init-common-lisp)
-
+(require 'init-latex)
 (when *spell-check-support-enabled*
   (require 'init-spelling))
 

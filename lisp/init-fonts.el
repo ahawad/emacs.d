@@ -21,4 +21,6 @@ This is helpful for writeroom-mode, in particular."
 
 
 
+;; changing font:
+(set-default-font "Operator Mono Light" nil t)
 (provide 'init-fonts)

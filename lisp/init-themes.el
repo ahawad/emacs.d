@@ -1,8 +1,9 @@
 (require-package 'color-theme-sanityinc-solarized)
 (require-package 'color-theme-sanityinc-tomorrow)
-
+(require-package 'atom-one-dark-theme)
 ;; If you don't customize it, this is the theme you get.
-(setq-default custom-enabled-themes '(sanityinc-solarized-light))
+
+(setq-default custom-enabled-themes '(atom-one-dark))
 
 ;; Ensure that themes will be applied even if they have not been customized
 (defun reapply-themes ()
