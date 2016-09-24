@@ -1,9 +1,10 @@
 ;;adding latexmk support
-(require 'auctex-latexmk)
+(require-package 'auctex-latexmk)
 (auctex-latexmk-setup)
 
 
 ;;setup pdf-tools
+(require-package 'pdf-tools)
 (pdf-tools-install)
 ;; Use pdf-tools to open PDF files
 (setq TeX-view-program-selection '((output-pdf "PDF Tools"))

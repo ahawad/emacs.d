@@ -51,6 +51,7 @@
 
 (require 'init-frame-hooks)
 (require 'init-xterm)
+(require-package 'atom-one-dark-theme)
 (load-theme 'atom-one-dark t)  ;(require 'init-themes)
 (require 'init-osx-keys)
 (require 'init-gui-frames)
@@ -76,7 +77,7 @@
 (require 'init-company)
 (require 'init-windows)
 (require 'init-sessions)
-(require 'init-fonts)
+;(require 'init-fonts)
 (require 'init-mmm)
 
 (require 'init-editing-utils)

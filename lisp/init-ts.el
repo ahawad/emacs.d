@@ -1,3 +1,4 @@
+(require-package 'tide)
 (defun setup-tide-mode ()
   (interactive)
   (tide-setup)
