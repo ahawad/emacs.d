@@ -42,8 +42,5 @@ site-lisp/package/
 /recentf
 /viper
 /projectile-bookmarks.eld
-<<<<<<< HEAD
 /anaconda-mode/
-=======
-/anaconda-mode/
->>>>>>> a4ef1d6f8f4c858ab7adc58172f880a33baf27f6
+
