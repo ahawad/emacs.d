@@ -77,9 +77,9 @@
 (require 'init-company)
 (require 'init-windows)
 (require 'init-sessions)
+
 (require 'init-fonts)
 (require 'init-mmm)
-
 (require 'init-editing-utils)
 (require 'init-whitespace)
 (require 'init-fci)
@@ -89,6 +89,7 @@
 (require 'init-git)
 (require 'init-github)
 (require 'init-projectile)
+
 (require 'init-compile)
 (require 'init-crontab)
 (require 'init-textile)
@@ -104,6 +105,7 @@
 (require 'init-haml)
 (require 'init-python-mode)
 (require 'init-neotree)
+
 (unless (version<= emacs-version "24.3")
   (require 'init-haskell))
 (require 'init-elm)
