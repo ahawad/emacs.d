@@ -4,7 +4,7 @@
 (require-package 'rtags)
 (require-package 'irony)
 (require-package 'flycheck-irony)
-
+(require-package 'cmake-ide)
 ;;setting up the rtags package
 (setq rtags-autostart-diagnostics t
       rtags-completions-enabled t
@@ -24,9 +24,9 @@
 (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
 
 ;;setting up company mode to use rtags
-(when (maybe-require-package 'company-rtags)
-  (after-load 'company
-    (add-hook 'irony-mode-hook (lambda () (sanityinc/local-push-company-backend 'company-rtags)))))
+(require 'company-rtags)
+(after-load 'company
+  (add-hook 'irony-mode-hook (lambda () (sanityinc/local-push-company-backend 'company-rtags))))
 
 ;;setting up company mode to use irony [code found in: http://syamajala.github.io/c-ide.html]
 (add-hook 'irony-mode-hook 'company-irony-setup-begin-commands)
@@ -56,4 +56,6 @@
 (eval-after-load 'flycheck
   '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
 
+;;setup cmake-ide
+(cmake-ide-setup)
 (provide 'init-cc)
