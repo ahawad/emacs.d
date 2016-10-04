@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: ang2comp
+# key: ang2comp
+# --
+import { Component } from '@angular/core';
+
+@Component({
+        selector:'$1',
+        template:\`$2\`
+})
+
+export class $3{
+$0
+}

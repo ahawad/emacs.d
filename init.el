@@ -61,7 +61,6 @@
 (require 'init-uniquify)
 (require 'init-ibuffer)
 (require 'init-flycheck)
-(require 'init-sml)
 
 (require 'init-recentf)
 (require 'init-smex)
@@ -104,6 +103,7 @@
 (require 'init-css)
 (require 'init-haml)
 (require 'init-python-mode)
+(require 'init-cc)
 (require 'init-neotree)
 
 (unless (version<= emacs-version "24.3")
@@ -153,6 +153,8 @@
 (when (file-exists-p custom-file)
   (load custom-file))
 
+;;Init mode line after custom file to avoid emacs issue with asking for theme safety
+(require 'init-sml)
 
 ;;----------------------------------------------------------------------------
 ;; Allow users to provide an optional "init-local" containing personal settings
