@@ -105,7 +105,7 @@
 (require 'init-python-mode)
 (require 'init-cc)
 (require 'init-neotree)
-
+(require 'init-semantic)
 (unless (version<= emacs-version "24.3")
   (require 'init-haskell))
 (require 'init-elm)

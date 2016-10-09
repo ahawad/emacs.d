@@ -38,7 +38,8 @@
 (maybe-require-package 'hayoo)
 (after-load 'haskell-mode
   (define-key haskell-mode-map (kbd "C-c h") 'hoogle)
-  (define-key haskell-mode-map (kbd "C-o") 'open-line))
+  (define-key haskell-mode-map (kbd "C-o") 'open-line)
+  (setq haskell-hoogle-command "hoogle"))
 
 
 (after-load 'page-break-lines
@@ -49,5 +50,6 @@
   (define-key interactive-haskell-mode-map (kbd "M-N") 'haskell-goto-next-error)
   (define-key interactive-haskell-mode-map (kbd "M-P") 'haskell-goto-prev-error))
 
-
+(add-hook 'haskell-mode-hook (lambda()
+                               (setq-local hindent-reformat-buffer-on-save t)))
 (provide 'init-haskell)

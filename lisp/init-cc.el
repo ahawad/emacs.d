@@ -58,4 +58,12 @@
 
 ;;setup cmake-ide
 (cmake-ide-setup)
+
+(defun cmake-ide/c-c++-hook ()
+  (with-eval-after-load 'projectile
+    (setq cmake-ide-project-dir (projectile-project-root))
+    (setq cmake-ide-build-dir (concat cmake-ide-project-dir "build"))))
+
+(add-hook 'c-mode-hook #'cmake-ide/c-c++-hook)
+
 (provide 'init-cc)
