@@ -43,7 +43,7 @@
     (add-hook 'company-completion-started-hook 'sanityinc/page-break-lines-disable)
     (add-hook 'company-completion-finished-hook 'sanityinc/page-break-lines-maybe-reenable)
     (add-hook 'company-completion-cancelled-hook 'sanityinc/page-break-lines-maybe-reenable)))
-
+(setq company-idle-delay 0.3)
 
 
 (provide 'init-company)

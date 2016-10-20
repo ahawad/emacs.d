@@ -44,3 +44,6 @@ site-lisp/package/
 /projectile-bookmarks.eld
 /anaconda-mode/
 
+/irony/bin/irony-server
+/lisp/compile_commands.json
+/semanticdb/!home!vulcan!Projects!ctest!semantic.cache
